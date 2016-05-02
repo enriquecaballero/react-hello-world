@@ -1,23 +1,25 @@
 {
   "name": "react-hello-world",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Simple, barebones introduction to React, Babel, and Webpack",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node ./node_modules/.bin/webpack -d --watch",
+    "babel": "node ./node_modules/.bin/babel src --out-dir lib",
     "build": "node ./node_modules/.bin/webpack"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "react": "^15.0.2",
+    "react-dom": "^15.0.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.7.7",
     "babel-core": "^6.5.2",
     "babel-loader": "^6.2.4",
     "babel-preset-es2015": "^6.5.0",
     "babel-preset-react": "^6.5.0",
     "file-loader": "^0.8.5",
-    "react": "^0.14.7",
-    "react-dom": "^0.14.7",
     "webpack": "^1.12.14"
   }
 }
