@@ -4,7 +4,7 @@ This is a very simple, boiler-plate, client-side only application using React, W
 
 ## Demo
 
-TODO link to gh-pages
+http://enriquecaballero.github.io/react-hello-world/
 
 ## Running / How does it work?
 
