@@ -8,13 +8,15 @@ class Hello extends React.Component {
   }
 }
 
-// define the type of each expected / allowed prop
+/** Define the type of each expected/allowed prop. **/
 Hello.propTypes = {
   who: PropTypes.string.isRequired
 };
 
-// this makes this component available via one of:
-// var Hello = require('Hello').default;
-// import Hello from 'Hello';
-// (with the correct paths, of course)
+/** 
+  * This makes this component available via one of:
+  * var Hello = require('Hello').default;
+  * import Hello from 'Hello';
+  * (with the correct paths, of course)
+  **/
 export default Hello;
