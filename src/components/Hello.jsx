@@ -1,16 +1,15 @@
 /* @flow */
 
-import React, { Component, PropTypes } from 'react';
+import React, { PropTypes } from 'react';
 
-class Hello extends Component {
-  static propTypes = {
-    who: PropTypes.string.isRequired
-  }
-  render () {
-    return <span>
-      Hello, { this.props.who }!
-    </span>;
-  }
-}
+const Hello = (props: any): React$Element<any> => {
+  return <span>
+    Hello, { props.who }!
+  </span>;
+};
+
+Hello.propTypes = {
+  who: PropTypes.string.isRequired
+};
 
 export default Hello;

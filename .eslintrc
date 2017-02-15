@@ -10,17 +10,40 @@
     "node": true,
   },
   "rules": {
-    "no-var": "warn",
-    "semi": [ "error", "always" ],
-    "func-call-spacing": [ "error", "always" ],
-    "no-spaced-func": "off",
-    "space-before-function-paren": [ "error", "always" ],
-    "comma-dangle": [ "error", "never" ],
-    "react/prefer-stateless-function": [ "off" ],
-    "react/jsx-wrap-multilines": [ "warn", { "return": false } ]
+    "arrow-body-style": 0,
+    "comma-dangle": [2, "never"],
+    "flowtype/use-flow-type": 1,
+    "flowtype/define-flow-type": 1,
+    "func-call-spacing": [2, "always"],
+    "func-names": 0,
+    "no-console": [2, {
+      "allow": [
+        "warn",
+        "error",
+        "info"
+      ]
+    }],
+    "no-param-reassign": 1,
+    "no-path-concat": 2,
+    "no-spaced-func": 0,
+    "no-var": 1,
+    "prefer-template" : 2,
+    "prefer-arrow-callback": 2,
+    "quote-props": [1, "as-needed"],
+    "react/jsx-wrap-multilines": [2, {
+      "return": false,
+      "declaration": false,
+      "assignment": false
+    }],
+    "react/prefer-stateless-function": [1],
+    "semi": [2, "always", {
+      "omitLastInOneLineBlock": true
+    }],
+    "space-before-function-paren": [2, "always"]
   },
   "plugins": [
     "babel",
-    "react"
+    "react",
+    "flowtype"
   ]
 }
