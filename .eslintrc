@@ -1,0 +1,26 @@
+{
+  "parser": "babel-eslint",
+  "extends": "airbnb",
+  "ecmaFeatures": {
+    "jsx": true,
+    "modules": true
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+  },
+  "rules": {
+    "no-var": "warn",
+    "semi": [ "error", "always" ],
+    "func-call-spacing": [ "error", "always" ],
+    "no-spaced-func": "off",
+    "space-before-function-paren": [ "error", "always" ],
+    "comma-dangle": [ "error", "never" ],
+    "react/prefer-stateless-function": [ "off" ],
+    "react/jsx-wrap-multilines": [ "warn", { "return": false } ]
+  },
+  "plugins": [
+    "babel",
+    "react"
+  ]
+}
