@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "description": "Simple, barebones introduction to React, Babel, and Webpack",
   "scripts": {
-    "dev": "node ./node_modules/.bin/webpack -d --watch",
-    "babel": "node ./node_modules/.bin/babel src --out-dir lib",
-    "build": "node ./node_modules/.bin/webpack"
+    "start": "webpack --watch",
+    "build": "webpack"
   },
   "author": "",
   "license": "ISC",
@@ -31,6 +30,6 @@
     "eslint-plugin-react": "^6.9.0",
     "file-loader": "^0.8.5",
     "flow-bin": "^0.39.0",
-    "webpack": "^1.12.14"
+    "webpack": "^2.2.1"
   }
 }
