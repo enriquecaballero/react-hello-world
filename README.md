@@ -1,5 +1,7 @@
 # React Hello, World!
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/enriquecaballero/react-hello-world.svg)](https://greenkeeper.io/)
+
 This is a very simple, boiler-plate, client-side only application using React, Webpack, and Babel.
 
 ## Demo
